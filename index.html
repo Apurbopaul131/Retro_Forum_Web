@@ -87,6 +87,7 @@
     </header>
 
     <main class="lg:mx-20 mx-5">
+      <!-- All posts section start -->
       <section class="my-20 space-y-6">
         <h3 class="text-center text-4xl font-bold text-[#12132D]">
           Let’s Discuss
@@ -95,8 +96,15 @@
           Yes, you can run unit tests and view the results directly within the
           app. The integrated testing features allow for a streamlined .
         </p>
-        <div class="grid grid-cols-5 gap-6">
-          <div id="post-container" class="col-span-3">
+
+        <!-- sppiner start -->
+        <div id="sppiner" class="text-center hidden">
+          <span class="loading loading-spinner text-primary"></span>
+          <span class="loading loading-spinner text-primary"></span>
+          <span class="loading loading-spinner text-primary"></span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+          <div id="post-container" class="lg:col-span-3">
             <!-- <div class="flex gap-6 bg-[#797DFC1A] p-10 rounded-3xl">
               <div class="avatar offline">
                 <div
@@ -148,7 +156,116 @@
               </div>
             </div> -->
           </div>
-          <div class="col-span-2">title</div>
+          <div class="col-span-2">
+            <!-- title and mark as read -->
+            <div class="bg-[#12132D0D] p-6 rounded-2xl">
+              <div class="flex justify-between">
+                <p class="text-xl font-bold text-[#12132D]">Title</p>
+                <div
+                  class="flex justify-end gap-1 w-1/3 border-2 border-blue-300"
+                >
+                  <img src="icons/tick.svg" alt="" />
+                  <p class="">Mark as read (<span id="read-count">0</span>)</p>
+                </div>
+              </div>
+
+              <div id="mark-read-box">
+                <!-- <div class="flex justify-between bg-white rounded-2xl p-3 my-3">
+                  <div>
+                    <p>10 Kids Unaware of Their</p>
+                    <p>10 Kids Unaware of Their</p>
+                  </div>
+                  <p class="flex gap-2 items-center">
+                    <img src="icons/show.svg" alt="" />
+                    <span>1,568</span>
+                  </p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- All posts section end -->
+
+      <!-- Registration section start -->
+      <section>
+        <div class="bg-[#12132D] rounded-3xl lg:h-[403px]">
+          <div
+            class="flex flex-col justify-around items-center px-5 py-10 lg:flex-row-reverse"
+          >
+            <img
+              src="images/joinforum.png"
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <h1 class="text-6xl font-bold text-white">Join Our Forum</h1>
+              <p class="py-6 text-xl text-[#FFFFFFCC]">
+                Share your favorite opinion and win and wp forum coffee mug!
+                Yes, you can <br />
+                run unit tests and view the results directly within the app.
+              </p>
+              <button
+                class="btn bg-[#797DFC] rounded-full text-white border-none"
+              >
+                Registered Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Registration section end -->
+
+      <!-- Leatest posts start -->
+      <section class="my-20 space-y-6">
+        <h3 class="text-center text-4xl font-bold text-[#12132D]">
+          Let’s Discuss
+        </h3>
+        <p class="text-center text-lg text-[#12132D99]">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined.
+        </p>
+
+        <div
+          id="leatest-post-container"
+          class="flex flex-col items-center lg:flex-row lg:justify-around"
+        >
+          <!-- <div
+            class="space-y-4 p-5 border-2 border-[#1213226] w-[374px] rounded-2xl"
+          >
+            <img
+              src=""
+              alt=""
+              class="w-[326px] h-[190px] border-2 border-red-500"
+            />
+            <p class="flex gap-2">
+              <img src="icons/publish.svg" alt="" />
+              <span>29 January 2024</span>
+            </p>
+            <h3>
+              What will a mars habitat force that impact in our daily life!!!
+            </h3>
+            <p>
+              Yes, you can run unit tests and view the results directly within
+              the app.
+            </p>
+
+            <div class="flex gap-5 items-center">
+              <div class="avatar">
+                <div
+                  class="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2"
+                >
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <p>Cameron Williamson</p>
+                <p>Unknown</p>
+              </div>
+            </div>
+          </div> -->
         </div>
       </section>
     </main>
