@@ -14,10 +14,145 @@
     <!-- link external css file -->
     <link rel="stylesheet" href="Style/Style.css" />
   </head>
-  <body>
-    <h1 class="text-5xl">Retro Forum</h1>
-    <img src="icons/Frame 5.svg" alt="" />
-    <img src="icons/Frame.svg" alt="" />
+  <body class="font-mulish">
+    <!-- header section start -->
+    <header class="lg:mx-20 mx-5 my-5">
+      <!-- navbar start -->
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <h1 class="text-4xl text-[#12132D] font-bold">ReTro</h1>
+        </div>
+        <div class="flex-none">
+          <div class="flex items-center gap-5">
+            <div class="tooltip" data-tip="Home">
+              <button><img src="icons/Home.svg" alt="" /></button>
+            </div>
+            <div class="tooltip" data-tip="Edit">
+              <button><img src="icons/Edit.svg" alt="" /></button>
+            </div>
+            <div class="tooltip" data-tip="Add">
+              <button><img src="icons/add.svg" alt="" /></button>
+            </div>
+            <div class="tooltip" data-tip="Flag">
+              <button><img src="icons/Frame 5.svg" alt="" /></button>
+            </div>
+            <div>
+              <button
+                class="btn h-[56px] w-[100px] bg-[#797DFC] rounded-full text-white"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar end -->
+
+      <!-- banner setion start -->
+      <div
+        class="hero bg-[#12132D] lg:h-[550px] bg-[url(images/bgbanner.png)] bg-no-repeat bg-cover rounded-3xl"
+      >
+        <div class="hero-content flex-col lg:flex-row-reverse gap-12">
+          <img src="images/Frame 9.svg" alt="" />
+          <div>
+            <h1 class="text-6xl font-bold text-white">
+              Welcome to the <br />
+              <span
+                class="bg-gradient-to-r from-[#797DFCFF] to-[#797DFC00] bg-clip-text text-transparent"
+                >ReTro</span
+              >
+              Forum
+            </h1>
+            <p class="py-6 text-xl text-[#FFFFFFCC]">
+              Share your favorite opinion and win and <br />
+              wp forum coffee mug!
+            </p>
+            <div class="join">
+              <input
+                id="search-input"
+                class="input input-bordered join-item"
+                placeholder="Search here"
+              />
+              <button
+                onclick="handleSearch()"
+                class="btn bg-[#797DFC] join-item rounded-r-full text-white"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner setion end -->
+    </header>
+
+    <main class="lg:mx-20 mx-5">
+      <section class="my-20 space-y-6">
+        <h3 class="text-center text-4xl font-bold text-[#12132D]">
+          Let’s Discuss
+        </h3>
+        <p class="text-center text-lg text-[#12132D99]">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+        <div class="grid grid-cols-5 gap-6">
+          <div id="post-container" class="col-span-3">
+            <!-- <div class="flex gap-6 bg-[#797DFC1A] p-10 rounded-3xl">
+              <div class="avatar offline">
+                <div
+                  class="w-[72px] h-[72px] rouned-2xl rounded-2xl border-none"
+                >
+                  <img src="" alt="" />
+                </div>
+              </div>
+
+              <div class="space-y-3 w-full">
+                <div class="flex gap-2">
+                  <p class="text-sm text-[#12132DCC] font-bold">
+                    #<span class="text-[#12132DCC] font-bold">Music</span>
+                  </p>
+                  <p class="text-sm text-[#12132DCC] font-bold">
+                    Author:<span class="text-[#12132DCC] font-bold"
+                      >Apurbo Paul</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="space-y-4 pb-5 border-b-2 border-dotted border-[#12132D40]"
+                >
+                  <p class="text-xl text-[#12132D] font-bold">
+                    10 Kids Unaware of Their Halloween Costumer
+                  </p>
+                  <p class="text-lg text-[#12132D]99 w-full">
+                    It’s one thing to subject yourself to ha
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <div class="flex gap-12">
+                    <p class="flex gap-3">
+                      <img src="icons/comment.svg" alt="" /><span>560</span>
+                    </p>
+                    <p class="flex gap-3">
+                      <img src="icons/show.svg" alt="" /><span>1200</span>
+                    </p>
+                    <p class="flex gap-3">
+                      <img src="icons/time.svg" alt="" /><span>100</span>
+                    </p>
+                  </div>
+                  <img
+                    src="icons/email 1.svg
+              "
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="col-span-2">title</div>
+        </div>
+      </section>
+    </main>
+
     <script src="Script/utilitites.js"></script>
     <script src="Script/script.js"></script>
   </body>
